@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starbucks Coffee Company</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="Index.html" class="logo"><img src="images/logo.png" alt="" /></a>
+        <div class="nav-link" id="navLink">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="Gift.html">Gift</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="">Pay</a></li>
+            <li><a href="">Store</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()" ></i>
+      </nav>
+      
+    <br>
+
+
+<!---       payment-->
+
+<div class="container">
+
+  <form action="">
+
+      <div class="row">
+
+          <div class="col">
+
+              <h3 class="title">billing address</h3>
+
+              <div class="inputBox">
+                  <span>full name :</span>
+                  <input type="text" placeholder="Your Name">
+              </div>
+              <div class="inputBox">
+                  <span>email :</span>
+                  <input type="email" placeholder="example@example.com">
+              </div>
+              
+              
+              <div class="inputBox">
+                  <span>address :</span>
+                  <input type="text" placeholder="room - street - locality">
+              </div>
+              <div class="inputBox">
+                  <span>city :</span>
+                  <input type="text" placeholder="mumbai">
+              </div>
+
+              <div class="flex">
+                  <div class="inputBox">
+                      <span>state :</span>
+                      <input type="text" placeholder="india">
+                  </div>
+                  <div class="inputBox">
+                      <span>zip code :</span>
+                      <input type="text" placeholder="123 456">
+                  </div>
+              </div>
+              
+
+          </div>
+
+          <div class="col">
+
+              <h3 class="title">payment</h3>
+
+              <div class="inputBox">
+                  <span>cards accepted :</span>
+                  <img src="images/payment gateway/images/card_img.png" alt="">
+              </div>
+              <div class="inputBox">
+                  <span>name on card :</span>
+                  <input type="text" placeholder="Name on Card">
+              </div>
+              <div class="inputBox">
+                  <span>credit card number :</span>
+                  <input type="number" placeholder="1111-2222-3333-4444">
+              </div>
+              <div class="inputBox">
+                  <span>exp month :</span>
+                  <input type="text" placeholder="january">
+              </div>
+
+              <div class="flex">
+                  <div class="inputBox">
+                      <span>exp year :</span>
+                      <input type="number" placeholder="2022">
+                  </div>
+                  <div class="inputBox">
+                      <span>CVV :</span>
+                      <input type="password" placeholder="1234">
+                  </div>
+              </div>
+
+          </div>
+  
+      </div>
+      <a href="ThankYou.html"><input type="button" value="proceed to checkout" class="submit-btn" ></a>
+      
+
+  </form>
+
+</div>    
+
+
+
+
+
+
+
+
+
+<!------->
+<br>
+<br>
+
+<!------------------about foooter-------->
+<section class="footer">
+  <h1>ABOUT US</h1>
+  <p>To say Starbucks purchases and roasts high-quality whole bean coffees is very true. That’s the essence of what we do – but it hardly tells the whole story.</p>
+  <br>
+  <div class="icon">
+    <a href="https://www.facebook.com/divinelydemonic"><i class="fa fa-facebook" ></i></a>
+    <a href="https://www.instagram.com/divinelydemonic"><i class="fa fa-instagram" ></i></a>
+    <a href="https://www.linkedin.com/in/kunal-raj-17ab28221"><i class="fa fa-linkedin" ></i></a>
+    <a href="https://x.com/dvnlydmnc001"><i class="fa fa-twitter" ></i></a>
+   </div> 
+ 
+ <p>Made with <i class="fa fa-heart-o" ></i> by Kunal Raj
+  <br>
+ </p>
+<br>
+    
+</section>
+
+
+
+<!----
+    <script type="text/javascript">
+     function changeImage1()
+    {
+        var img = document.getElementById("images");
+        img.src = 'img1.png';
+    }
+     function changeImage2()
+    {
+        var img = document.getElementById("images");
+        img.src = 'img2.png';
+    }
+     function changeImage3()
+    {
+        var img = document.getElementById("images");
+        img.src = 'img3.png';
+    }
+    </script>
+-->
+
+
+    <script type="text/javascript">
+        function changeImg(anything)
+        {
+            var img = document.getElementById('images');
+            img.src = anything;
+        }
+        function changeColor(color)
+        {
+            const circle=document.getElementById('Circle');
+            circle.style.backgroundColor = color;
+        }
+        var navLink = document.getElementById("navLink");
+        function showMenu(){
+            navLink.style.right="0px"
+        }
+        function hideMenu(){
+            navLink.style.right="-500px"
+        }        
+    </script>
+  </body>
+</html>
